@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CodeQuiz</title>
 </head>
+
 <body>
- <!-- create container to hold all content -->
- <div class="container">
-<header><a href="highscores.html">highscores</a></header>
- <!-- create header with link to high scores page -->
- <div class="row"></div>
-
- <!-- create row with a column inside that will hold the game divs -->
  
-<!-- create div with welcome message game instructions and start button -->
-<!-- add //in link to css page and script tag to JavaScript page  -->
+<!-- high scores -->
+    <header class= "scores"><a href="highscores.html">All Highscores</a></header>
+    <!-- timer -->
+    <div class="timer">Time: <span id="time">0</span></div>
+<!-- create container to hold all content -->
+    <div class="wrapper">
+                <!-- create row with a column inside that will hold the game divs -->
+                
+        <!-- create div with welcome message game instructions and start button -->
+        <div id="start-screen" class="start">
+            <!-- why class=start^ -->
+            <h1>The Coding Quiz</h1>
+            <p>
+                The following questions will test your knowledge on some software development.
+                There are no life lines and all scores will be tallied so that your score will be compared
+                with other users. Study hard and go get `em!
+            </p>
+            <button id="start">Begin Quiz</button>
+        </div>
+
+       
+    </div>
+
+
     
-    <div id="question"></div>
+        <!-- create row with a column inside that will hold the game divs -->
 
- </div>
+        <!-- create div with welcome message game instructions and start button -->
+        <!-- add //in link to css page and script tag to JavaScript page  -->
 
-<script src="logic.js"></script>
+
+
+    </div>
+
+    <script src="logic.js"></script>
+    <script src="questions.js"></script>
 </body>
+
 </html>
